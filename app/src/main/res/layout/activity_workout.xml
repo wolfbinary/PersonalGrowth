@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wolfbinary.personalgrowth.Workout">
+
+    <EditText
+        android:id="@+id/et_weight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="Weight"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etReps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Reps"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="@+id/et_weight"
+        app:layout_constraintRight_toRightOf="@+id/et_weight"
+        app:layout_constraintTop_toBottomOf="@+id/et_weight" />
+
+    <EditText
+        android:id="@+id/etRestPeriod"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Rest Period"
+        android:inputType="time"
+        app:layout_constraintLeft_toLeftOf="@+id/etReps"
+        app:layout_constraintRight_toRightOf="@+id/etReps"
+        app:layout_constraintTop_toBottomOf="@+id/etReps" />
+
+    <Switch
+        android:id="@+id/switchWarmup"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        android:text="Warmup"
+        android:textAlignment="viewEnd"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/etRestPeriod"
+        app:layout_constraintRight_toRightOf="@+id/etRestPeriod"
+        app:layout_constraintTop_toBottomOf="@+id/etRestPeriod" />
+
+</android.support.constraint.ConstraintLayout>
